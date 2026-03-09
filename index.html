@@ -55,14 +55,29 @@
             transition: color 0.2s ease, background-color 0.2s ease;
         }
 
+        #toggle-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: inherit;
+        }
+
 
     </style>
 </head>
 <body>
-    <button id="theme-toggle" 
-            style="background:none;border:none;font-size:24px;cursor:pointer;">
-            🌙
-    </button>
+    <div id="toggle-container">
+        <button id="theme-toggle">🌙</button>
+    </div>
+
 
 
 
